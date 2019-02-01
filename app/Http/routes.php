@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'KeywordsController@index');
+
+Route::resource('keywords', 'KeywordsController');
