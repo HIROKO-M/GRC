@@ -14,3 +14,6 @@
 Route::get('/', 'KeywordsController@index');
 
 Route::resource('keywords', 'KeywordsController');
+
+Route::get('showImportCSV', 'GdatasController@showImportCSV')->name('gdatas.showImportCSV');
+Route::post('showImportCSV', 'GdatasController@importCSV');

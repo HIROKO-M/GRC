@@ -2,6 +2,7 @@
 
 @section('content')
 
+
     <h1>検索キーワード一覧</h1>
     
     @if(count($keywords) > 0)

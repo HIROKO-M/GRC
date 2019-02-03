@@ -12,8 +12,14 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                                キーワードを追加</a></li>
+                    <li><a href="{{ route('keywords.create')}}">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>キーワードを追加
+                    </a></li>
+                    
+                    <li><a href="{{ route('gdatas.showImportCSV')}}">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>CSVファイルインポート
+                    </a></li>
+                    
                 </ul>
             </div>
         </div>
