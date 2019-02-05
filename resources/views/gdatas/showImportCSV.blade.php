@@ -15,5 +15,8 @@
  
 {!! Form::close() !!}
 
+@if(Session::has('message'))
+  {{ session('message') }}
+@endif
 
 @endsection

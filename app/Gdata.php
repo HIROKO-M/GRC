@@ -17,5 +17,6 @@ class Gdata extends Model
         'y_change', 
         'y_count', 
         'y_url', 
+        'check_date',
         ];
 }

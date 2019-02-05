@@ -29,7 +29,6 @@
     @endif
     
     
-    {!! link_to_route('keywords.create', '新規検索キーワードの追加', null, ['class' => 'btn btn-primary']) !!}
 
 
 @endsection
