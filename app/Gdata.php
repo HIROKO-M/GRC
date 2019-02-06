@@ -20,4 +20,9 @@ class Gdata extends Model
         'y_url', 
         'check_date',
         ];
+    
+    public function keyword()
+    {
+        return $this->belongsTo(Keyword::class);
+    }
 }

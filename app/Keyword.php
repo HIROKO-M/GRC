@@ -14,4 +14,9 @@ class Keyword extends Model
         'site_url',
         'check_date'
         ];
+    
+    public function gdatas()
+    {
+        return $this->hasMany(Gdata::class);
+    }
 }
