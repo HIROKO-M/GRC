@@ -8,6 +8,8 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\Gdata;
+
+
 use Goodby\CSV\Import\Standard\Lexer;
 use Goodby\CSV\Import\Standard\Interpreter;
 use Goodby\CSV\Import\Standard\LexerConfig;
@@ -21,10 +23,11 @@ class GdatasController extends Controller
  
   }
  
+ 
+ 
   public function importCSV(Request $request) {
  
- 
-    //postで受け取ったcsvファイルデータ
+     //postで受け取ったcsvファイルデータ
     $file = $request->file('file');
  
     //Goodby CSVのconfig設定
@@ -50,12 +53,13 @@ class GdatasController extends Controller
 
         // CSVのデータを配列化
         foreach ($rows as $key => $value) {
- 
+            
             $arr = array();
-
+            
             foreach ($value as $k => $v) {
+                
                 switch ($k) {
- 
+
              	    case 0:
                     $arr['grc_site_name'] = $v;
                     break;
@@ -100,7 +104,7 @@ class GdatasController extends Controller
  
     // DBに一括保存
     Gdata::insert($data);
-
+    
     $request->session()->flash('message', '登録したでござる');
     return redirect('showImportCSV');
     

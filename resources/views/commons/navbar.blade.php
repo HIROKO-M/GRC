@@ -20,6 +20,11 @@
                         <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>CSVファイルインポート
                     </a></li>
                     
+                    <li><a href="{{ route('gdatas.showimportKeyword')}}">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>キーワードインポート
+                    </a></li>
+
+                    
                   
                     
                 </ul>

@@ -2,13 +2,13 @@
 
 @section('content')
 
-    <h1>CSVファイルインポート</h1>
+    <h1>キーワードインポート</h1>
 
-    {!! Form::open(['url' => url('/showImportCSV'), 'method' => 'post', 'class' => '', 'files' => true]) !!}
+    {!! Form::open(['url' => url('/showimportKeyword'), 'method' => 'post', 'class' => '', 'files' => true]) !!}
         <div class="form-group">
             <input type="file" class="" name="file" value="">
         </div>
-        {!! Form::submit('CSVファイル読み込み', ['class' => 'btn btn-success']) !!}
+        {!! Form::submit('キーワード読み込み', ['class' => 'btn btn-success']) !!}
     {!! Form::close() !!}
 
     @if(Session::has('message'))

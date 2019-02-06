@@ -9,6 +9,7 @@ class Gdata extends Model
     protected $table = 'gdatas';
 
 
+
     protected $fillable = [
         'grc_site_name', 
         'grc_site_url', 

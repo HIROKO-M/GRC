@@ -8,7 +8,10 @@ class Keyword extends Model
 {
     protected $table = 'keywords';
     
-    protected $fillable = ['keyword', 'site_name', 'site_url'];
-
-    
+    protected $fillable = [
+        'keyword', 
+        'site_name', 
+        'site_url',
+        'check_date'
+        ];
 }
